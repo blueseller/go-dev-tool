@@ -22,3 +22,5 @@ fi
 cp -r $path/go/src/* $HOME/go/src
 
 rm -rf $path/go
+source $HOME/.bashrc
+source $HOME/.bash_profile
