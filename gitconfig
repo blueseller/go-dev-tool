@@ -1,0 +1,54 @@
+[user]
+    name = liukai02
+    email = liukai02@360.net
+[alias]
+    ci = commit
+    ca = commit -a
+    cia = commit --amend
+    di = diff --ignore-space-at-eol -w -b
+    dic = diff --cached
+    wc = whatchanged --oneline
+    ss = stash list
+    st = status
+    s = status -sb
+    br = branch
+    rb = branch -r
+    b = branch -a -v
+    bm = branch --merged
+    bn = branch --no-merged
+    co = checkout
+    w = shortlog -s -n --since='1 week ago' --no-merges
+    m = shortlog -s -n --since='1 month ago' --no-merges
+    d = shortlog -s -n --since='2 day ago' --no-merges
+    hd = log -2 HEAD
+    h = !git log --pretty=format:\"%Cred%an%Creset@%ar - %Cgreen%s%Creset\"
+    his = !git log --numstat --pretty=format:\"%Cred%an%Creset@%ar %Cgreen%s%Creset\" HEAD
+    lg = log --date=local
+    ls = log --stat --summary --date=local
+    ll = log -p --date=local
+    llw = log -p --date=local --word-diff
+    u = log --stat --summary --date=local --author
+    uu = log -p --date=local --author
+    bl = blame --show-stats
+    bls = blame --show-stats -s
+    kx = svn rebase
+    rem = remote -v
+    unstage = reset HEAD --
+    datetag = !git tag `date \"+%Y%m%d%H%M\"`
+    ds = diff --stat-width=500
+    dm = diff --stat-width=500 master
+    conf = config -l
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = true
+[core]
+        autocrlf = false
+        quotepath = false
+        excludesfile = /home/liukai-ps/.gitignore
+        editor = vim
+[push]
+        default = simple
+[credential]
+        helper = store
