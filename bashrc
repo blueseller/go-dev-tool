@@ -39,8 +39,8 @@ function parse_git_branch {
 
 export PS1="\[\e[33;1m\][\u@\h \w\$(parse_git_branch)]$\[\e[m\] "
 
-export http_proxy=http://localhost:8118                                                                                                                                          
-export https_proxy=http://localhost:8118                                                                                                                                         
-alias go="http_proxy=http://localhost:8118 https_proxy=http://localhost:8118 go"                                                                                                 
-alias dep="http_proxy=http://localhost:8118 https_proxy=http://localhost:8118 dep"  
+#export http_proxy=http://localhost:8118
+#export https_proxy=http://localhost:8118
+#alias go="http_proxy=http://localhost:8118 https_proxy=http://localhost:8118 go"
+#alias dep="http_proxy=http://localhost:8118 https_proxy=http://localhost:8118 dep"  
 #alias vim="/usr/local/bin/vim"
